@@ -1,5 +1,7 @@
 package code.erikdev.enderrite;
 
+import code.erikdev.enderrite.creativemodetab.EnderriteCreativeModeTab;
+import code.erikdev.enderrite.item.EnderriteItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -25,11 +27,9 @@ public class EnderriteMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+        EnderriteItems.register(modEventBus);
+        EnderriteCreativeModeTab.register(modEventBus);
 
-        // Register the item to a creative tab
-
-
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 

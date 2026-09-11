@@ -1,13 +1,10 @@
 {
-  "itemGroup.enderrite": "Example Mod Tab",
-  "block.enderrite.example_block": "Example Block",
-  "item.enderrite.example_item": "Example Item",
+  "itemGroup.enderrite": "§5Enderrite Mod Tab",
+  "item.enderrite.enderrite_ingot": "Enderrite Ingot",
+  "item.enderrite.raw_enderrite": "Raw Enderrite",
 
   "enderrite.configuration.title": "Enderrite Mod Configs",
   "enderrite.configuration.section.enderrite.common.toml": "Enderrite Mod Configs",
   "enderrite.configuration.section.enderrite.common.toml.title": "Enderrite Mod Configs",
-  "enderrite.configuration.items": "Item List",
-  "enderrite.configuration.logDirtBlock": "Log Dirt Block",
-  "enderrite.configuration.magicNumberIntroduction": "Magic Number Text",
-  "enderrite.configuration.magicNumber": "Magic Number"
+  "enderrite.configuration.items": "Item List"
 }

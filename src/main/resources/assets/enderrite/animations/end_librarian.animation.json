@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.end_librarian.walking": {
+			"animation_length": 5.375,
+			"bones": {
+				"leg_left": {
+					"rotation": {
+						"vector": [-10, 0, 0]
+					},
+					"position": {
+						"2.125": {
+							"vector": [0, 0.61, -1.39]
+						},
+						"5.375": {
+							"pre": [0, 0, 0],
+							"post": [0, 1, 0]
+						}
+					}
+				},
+				"leg_right": {
+					"rotation": {
+						"0.9167": {
+							"vector": [17.5, 0, 0]
+						},
+						"2.125": {
+							"vector": [7.5, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 1, 1]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
