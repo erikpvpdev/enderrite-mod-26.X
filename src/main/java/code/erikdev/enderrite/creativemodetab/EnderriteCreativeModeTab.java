@@ -1,6 +1,7 @@
 package code.erikdev.enderrite.creativemodetab;
 
 import code.erikdev.enderrite.EnderriteMod;
+import code.erikdev.enderrite.block.EnderriteBlocks;
 import code.erikdev.enderrite.item.EnderriteItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,6 +24,10 @@ public class EnderriteCreativeModeTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(EnderriteItems.ENDERRITE);
                         output.accept(EnderriteItems.RAW_ENDERRITE);
+                        output.accept(EnderriteBlocks.ENDERRITE_BLOCK);
+                        output.accept(EnderriteBlocks.RAW_ENDERRITE_BLOCK);
+
+                        output.accept(EnderriteBlocks.ENDERRITE_ORE);
 
 
                     }).build());

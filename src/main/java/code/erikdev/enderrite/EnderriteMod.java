@@ -1,5 +1,6 @@
 package code.erikdev.enderrite;
 
+import code.erikdev.enderrite.block.EnderriteBlocks;
 import code.erikdev.enderrite.creativemodetab.EnderriteCreativeModeTab;
 import code.erikdev.enderrite.item.EnderriteItems;
 import org.slf4j.Logger;
@@ -27,7 +28,10 @@ public class EnderriteMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
         EnderriteItems.register(modEventBus);
+        EnderriteBlocks.register(modEventBus);
+
         EnderriteCreativeModeTab.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
