@@ -18,11 +18,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(EnderriteBlocks.ENDERRITE_BLOCK.get())
-                .add(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get())
-                .add(EnderriteBlocks.ENDERRITE_ORE.get());
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_BLOCK.get()))
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get()))
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_ORE.get()));
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(EnderriteBlocks.ENDERRITE_ORE.get());
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_ORE.get()));
     }
 }

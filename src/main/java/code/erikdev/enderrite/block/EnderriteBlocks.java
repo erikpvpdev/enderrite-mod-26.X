@@ -2,8 +2,11 @@ package code.erikdev.enderrite.block;
 
 import code.erikdev.enderrite.EnderriteMod;
 import code.erikdev.enderrite.item.EnderriteItems;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -28,6 +31,11 @@ public class EnderriteBlocks {
     public static final DeferredBlock<Block> ENDERRITE_ORE = registerBlock("enderrite_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);

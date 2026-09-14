@@ -1,6 +1,8 @@
 package code.erikdev.enderrite.item;
 
 import code.erikdev.enderrite.EnderriteMod;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -41,6 +43,10 @@ public class EnderriteItems {
     public static final DeferredItem<Item> ENDERRITE_BOOTS = ITEMS.registerItem("enderrite_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
+
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
 
 
     public static void register(IEventBus eventBus) {
