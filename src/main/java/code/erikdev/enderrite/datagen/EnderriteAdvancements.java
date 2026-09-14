@@ -55,7 +55,7 @@ public class EnderriteAdvancements extends AdvancementProvider {
                             false
                     )
                     .addCriterion("has_enderrite", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(items, EnderriteItems.ENDERRITE.asItem())))
-                    .save(output, Identifier.fromNamespaceAndPath(EnderriteMod.MOD_ID, "enderrite/root"));
+                    .save(output, Identifier.fromNamespaceAndPath(EnderriteMod.MOD_ID, "enderrite/sword"));
 
         }
     }
