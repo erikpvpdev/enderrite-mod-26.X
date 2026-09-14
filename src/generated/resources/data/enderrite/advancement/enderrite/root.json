@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_enderrite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enderrite:enderrite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:block/enderrite_block",
+    "description": {
+      "translate": "advancements.enderrite.root.description"
+    },
+    "icon": {
+      "id": "enderrite:enderrite_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.enderrite.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_enderrite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
