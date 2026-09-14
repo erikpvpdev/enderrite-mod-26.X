@@ -21,7 +21,10 @@
   "enderrite.configuration.title": "Enderrite Mod Configs",
   "enderrite.configuration.section.enderrite.common.toml": "Enderrite Mod Configs",
   "enderrite.configuration.section.enderrite.common.toml.title": "Enderrite Mod Configs",
-  "enderrite.configuration.items": "Item List"
+  "enderrite.configuration.items": "Item List",
+
+  "advancements.enderrite.root.title": "More Progession?!",
+  "advancements.enderrite.root.description": "Obtain your first §5Enderite§a Ingot"
 }
 
 

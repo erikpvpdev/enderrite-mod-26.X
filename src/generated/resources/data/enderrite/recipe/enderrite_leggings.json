@@ -3,11 +3,12 @@
   "category": "equipment",
   "group": "ENDERRITE",
   "key": {
-    "A": "enderrite:enderrite_ingot"
+    "A": "enderrite:enderrite_ingot",
+    "B": "minecraft:netherite_ingot"
   },
   "pattern": [
     "AAA",
-    "A A",
+    "ABA",
     "A A"
   ],
   "result": {
