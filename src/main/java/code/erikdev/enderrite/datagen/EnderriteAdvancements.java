@@ -43,6 +43,20 @@ public class EnderriteAdvancements extends AdvancementProvider {
                     .addCriterion("has_enderrite", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(items, EnderriteItems.ENDERRITE.asItem())))
                     .save(output, Identifier.fromNamespaceAndPath(EnderriteMod.MOD_ID, "enderrite/root"));
 
+            AdvancementHolder Root = Advancement.Builder.advancement()
+                    .display(
+                            EnderriteItems.ENDERRITE_SWORD,
+                            Component.translatable("advancements.enderrite.sword.title"),
+                            Component.translatable("advancements.enderrite.sword.description"),
+                            Identifier.withDefaultNamespace("block/enderrite_block"),
+                            AdvancementType.TASK,
+                            false,
+                            false,
+                            false
+                    )
+                    .addCriterion("has_enderrite", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(items, EnderriteItems.ENDERRITE.asItem())))
+                    .save(output, Identifier.fromNamespaceAndPath(EnderriteMod.MOD_ID, "enderrite/root"));
+
         }
     }
 }

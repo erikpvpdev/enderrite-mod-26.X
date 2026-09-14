@@ -24,7 +24,10 @@
   "enderrite.configuration.items": "Item List",
 
   "advancements.enderrite.root.title": "More Progession?!",
-  "advancements.enderrite.root.description": "Obtain your first §5Enderite§a Ingot"
+  "advancements.enderrite.root.description": "Obtain your first §5Enderite§a Ingot",
+
+  "advancements.enderrite.sword.title": "§5Legendary §7Weapon",
+  "advancements.enderrite.sword.description": "Obtain the Legendary §5Enderrite §aSword"
 }
 
 
