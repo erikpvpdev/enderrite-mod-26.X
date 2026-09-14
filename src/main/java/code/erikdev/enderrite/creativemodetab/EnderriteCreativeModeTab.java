@@ -33,6 +33,7 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteItems.ENDERRITE_PICKAXE);
                         output.accept(EnderriteItems.ENDERRITE_SHOVEL);
                         output.accept(EnderriteItems.ENDERRITE_AXE);
+
                         output.accept(EnderriteItems.ENDERRITE_HOE);
                         output.accept(EnderriteItems.ENDERRITE_SPEAR);
 

@@ -128,35 +128,43 @@ public class ModRecipeProvider extends RecipeProvider {
         
         shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_HELMET.get())
                 .pattern("AAA")
-                .pattern("A A")
+                .pattern("ABA")
                 .define('A', EnderriteItems.ENDERRITE.get())
+                .define('B', Items.NETHERITE_INGOT)
                 .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
                 .group("ENDERRITE")
                 .save(output);
 
         shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_CHESTPLATE.get())
                 .pattern("A A")
-                .pattern("AAA")
+                .pattern("ABA")
                 .pattern("AAA")
                 .define('A', EnderriteItems.ENDERRITE.get())
+                .define('B', Items.NETHERITE_INGOT)
                 .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
                 .group("ENDERRITE")
                 .save(output);
 
         shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_LEGGINGS.get())
                 .pattern("AAA")
-                .pattern("A A")
+                .pattern("ABA")
                 .pattern("A A")
                 .define('A', EnderriteItems.ENDERRITE.get())
+                .define('B', Items.NETHERITE_INGOT)
                 .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
                 .group("ENDERRITE")
                 .save(output);
 
         shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_BOOTS.get())
                 .pattern("A A")
-                .pattern("A A")
+                .pattern("ABA")
                 .define('A', EnderriteItems.ENDERRITE.get())
+                .define('B', Items.NETHERITE_INGOT)
                 .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
                 .group("ENDERRITE")
                 .save(output);
 
