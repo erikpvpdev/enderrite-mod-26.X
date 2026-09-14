@@ -20,10 +20,10 @@ public class EnderriteBlocks {
 
     public static final DeferredBlock<Block> ENDERRITE_BLOCK = registerBlock("enderrite_block",
             properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final DeferredBlock<Block> RAW_ENDERRITE_BLOCK = registerBlock("raw_enderrite_block",
             properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     public static final DeferredBlock<Block> ENDERRITE_ORE = registerBlock("enderrite_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
