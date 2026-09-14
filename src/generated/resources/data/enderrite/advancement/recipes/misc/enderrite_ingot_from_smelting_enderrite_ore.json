@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enderrite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enderrite:enderrite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enderrite:enderrite_ingot_from_smelting_enderrite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enderrite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enderrite:enderrite_ingot_from_smelting_enderrite_ore"
+    ]
+  }
+}

@@ -17,7 +17,7 @@ public class EnderriteCreativeModeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EnderriteMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> AZURITE_ITEMS_TAB = CREATIVE_MODE_TABS.register("enderrite_tab",
+    public static final Supplier<CreativeModeTab> ENDERRITE_ITEMS_TAB = CREATIVE_MODE_TABS.register("enderrite_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(EnderriteItems.ENDERRITE.get()))
                     .title(Component.translatable("itemGroup.enderrite"))
                     .withTabsBefore(CreativeModeTabs.INGREDIENTS)
@@ -28,6 +28,13 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteBlocks.RAW_ENDERRITE_BLOCK);
 
                         output.accept(EnderriteBlocks.ENDERRITE_ORE);
+
+                        output.accept(EnderriteItems.ENDERRITE_SWORD);
+                        output.accept(EnderriteItems.ENDERRITE_PICKAXE);
+                        output.accept(EnderriteItems.ENDERRITE_SHOVEL);
+                        output.accept(EnderriteItems.ENDERRITE_AXE);
+                        output.accept(EnderriteItems.ENDERRITE_HOE);
+                        output.accept(EnderriteItems.ENDERRITE_SPEAR);
 
 
                     }).build());

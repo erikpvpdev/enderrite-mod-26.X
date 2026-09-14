@@ -23,6 +23,13 @@ public class EnderriteModelProvider extends ModelProvider {
         blockModels.createTrivialCube(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get());
         blockModels.createTrivialCube(EnderriteBlocks.ENDERRITE_ORE.get());
 
+        itemModels.generateFlatItem(EnderriteItems.ENDERRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(EnderriteItems.ENDERRITE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(EnderriteItems.ENDERRITE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(EnderriteItems.ENDERRITE_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(EnderriteItems.ENDERRITE_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateSpear(EnderriteItems.ENDERRITE_SPEAR.get());
+
 
     }
 }

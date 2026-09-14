@@ -2,6 +2,14 @@
   "itemGroup.enderrite": "§5Enderrite Mod Tab",
   "item.enderrite.enderrite_ingot": "Enderrite Ingot",
   "item.enderrite.raw_enderrite": "Raw Enderrite",
+  "item.enderrite.enderrite_sword": "Enderrite Sword",
+  "item.enderrite.enderrite_pickaxe": "Enderrite Pickaxe",
+  "item.enderrite.enderrite_axe": "Enderrite Axe",
+  "item.enderrite.enderrite_shovel": "Enderrite_shovel",
+  "item.enderrite.enderrite_hoe": "Enderrite Hoe",
+  "item.enderrite.enderrite_spear": "Enderrite Spear",
+
+
 
   "block.enderrite.raw_enderrite_block": "Raw Enderrite Block",
   "block.enderrite.enderrite_ore": "Enderrite Ore",
@@ -12,3 +20,5 @@
   "enderrite.configuration.section.enderrite.common.toml.title": "Enderrite Mod Configs",
   "enderrite.configuration.items": "Item List"
 }
+
+

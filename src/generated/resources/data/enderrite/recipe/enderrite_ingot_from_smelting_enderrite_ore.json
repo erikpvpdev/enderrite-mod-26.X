@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "ENDERRITE",
+  "ingredient": "enderrite:enderrite_ore",
+  "result": {
+    "id": "enderrite:enderrite_ingot"
+  }
+}
