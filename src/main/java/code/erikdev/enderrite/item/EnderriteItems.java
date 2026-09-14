@@ -5,6 +5,7 @@ import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -30,6 +31,16 @@ public class EnderriteItems {
     public static final DeferredItem<Item> ENDERRITE_SPEAR = ITEMS.registerItem("enderrite_spear",
             properties -> new Item(properties.spear(ModToolTiers.ENDERRITE, 0.95f, 0.7f, 0.7f,
                     3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)));
+
+    public static final DeferredItem<Item> ENDERRITE_HELMET = ITEMS.registerItem("enderrite_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final DeferredItem<Item> ENDERRITE_CHESTPLATE = ITEMS.registerItem("enderrite_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> ENDERRITE_LEGGINGS = ITEMS.registerItem("enderrite_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> ENDERRITE_BOOTS = ITEMS.registerItem("enderrite_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.BOOTS)));
+
 
 
     public static void register(IEventBus eventBus) {

@@ -1,9 +1,6 @@
 package code.erikdev.enderrite;
 
-import code.erikdev.enderrite.datagen.EnderriteModelProvider;
-import code.erikdev.enderrite.datagen.ModBlockLootTableProvider;
-import code.erikdev.enderrite.datagen.ModBlockTagsProvider;
-import code.erikdev.enderrite.datagen.ModRecipeProvider;
+import code.erikdev.enderrite.datagen.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -29,5 +26,7 @@ public class EnderriteModDataGen {
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+
+        generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
     }
 }

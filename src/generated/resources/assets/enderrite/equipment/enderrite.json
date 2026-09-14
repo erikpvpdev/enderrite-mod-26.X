@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "enderrite:enderrite"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "enderrite:enderrite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "enderrite:enderrite"
+      }
+    ]
+  }
+}

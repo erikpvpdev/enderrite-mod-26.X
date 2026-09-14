@@ -5,11 +5,14 @@
   "item.enderrite.enderrite_sword": "Enderrite Sword",
   "item.enderrite.enderrite_pickaxe": "Enderrite Pickaxe",
   "item.enderrite.enderrite_axe": "Enderrite Axe",
-  "item.enderrite.enderrite_shovel": "Enderrite_shovel",
+  "item.enderrite.enderrite_shovel": "Enderrite Shovel",
   "item.enderrite.enderrite_hoe": "Enderrite Hoe",
   "item.enderrite.enderrite_spear": "Enderrite Spear",
 
-
+  "item.enderrite.enderrite_helmet": "Enderrite Helmet",
+  "item.enderrite.enderrite_chestplate": "Enderrite Shovel",
+  "item.enderrite.enderrite_leggings": "Enderrite Leggings",
+  "item.enderrite.enderrite_boots": "Enderrite Boots",
 
   "block.enderrite.raw_enderrite_block": "Raw Enderrite Block",
   "block.enderrite.enderrite_ore": "Enderrite Ore",

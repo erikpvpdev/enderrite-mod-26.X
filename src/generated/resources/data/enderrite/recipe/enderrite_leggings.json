@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ENDERRITE",
+  "key": {
+    "A": "enderrite:enderrite_ingot"
+  },
+  "pattern": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "result": {
+    "id": "enderrite:enderrite_leggings"
+  }
+}

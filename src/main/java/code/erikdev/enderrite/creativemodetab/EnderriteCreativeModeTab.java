@@ -37,6 +37,13 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteItems.ENDERRITE_SPEAR);
 
 
+                        output.accept(EnderriteItems.ENDERRITE_HELMET);
+                        output.accept(EnderriteItems.ENDERRITE_CHESTPLATE);
+                        output.accept(EnderriteItems.ENDERRITE_LEGGINGS);
+                        output.accept(EnderriteItems.ENDERRITE_BOOTS);
+
+
+
                     }).build());
 
 

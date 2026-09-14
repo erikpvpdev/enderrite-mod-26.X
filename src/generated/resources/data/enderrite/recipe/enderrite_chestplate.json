@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ENDERRITE",
+  "key": {
+    "A": "enderrite:enderrite_ingot"
+  },
+  "pattern": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "enderrite:enderrite_chestplate"
+  }
+}

@@ -125,6 +125,40 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
                 .group("ENDERRITE")
                 .save(output);
+        
+        shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', EnderriteItems.ENDERRITE.get())
+                .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .group("ENDERRITE")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', EnderriteItems.ENDERRITE.get())
+                .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .group("ENDERRITE")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', EnderriteItems.ENDERRITE.get())
+                .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .group("ENDERRITE")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, EnderriteItems.ENDERRITE_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', EnderriteItems.ENDERRITE.get())
+                .unlockedBy(getHasName(EnderriteItems.ENDERRITE.get()), has(EnderriteItems.ENDERRITE))
+                .group("ENDERRITE")
+                .save(output);
 
 
     }

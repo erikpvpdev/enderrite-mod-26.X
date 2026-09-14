@@ -3,6 +3,7 @@ package code.erikdev.enderrite.datagen;
 import code.erikdev.enderrite.EnderriteMod;
 import code.erikdev.enderrite.block.EnderriteBlocks;
 import code.erikdev.enderrite.item.EnderriteItems;
+import code.erikdev.enderrite.item.ModArmorMaterials;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -29,6 +30,11 @@ public class EnderriteModelProvider extends ModelProvider {
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateSpear(EnderriteItems.ENDERRITE_SPEAR.get());
+
+        itemModels.generateTrimmableItem(EnderriteItems.ENDERRITE_HELMET.get(), ModArmorMaterials.ENDERRITE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModels.generateTrimmableItem(EnderriteItems.ENDERRITE_CHESTPLATE.get(), ModArmorMaterials.ENDERRITE_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModels.generateTrimmableItem(EnderriteItems.ENDERRITE_LEGGINGS.get(), ModArmorMaterials.ENDERRITE_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModels.generateTrimmableItem(EnderriteItems.ENDERRITE_BOOTS.get(), ModArmorMaterials.ENDERRITE_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
 
     }
