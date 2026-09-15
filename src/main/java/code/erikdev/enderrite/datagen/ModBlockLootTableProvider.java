@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(EnderriteBlocks.ENDERRITE_BLOCK.get());
         dropSelf(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get());
+        dropSelf(EnderriteBlocks.LIBRARIAN_TOME.get());
 
         add(EnderriteBlocks.ENDERRITE_ORE.get(),
                 createOreDrop(EnderriteBlocks.ENDERRITE_ORE.get(), EnderriteItems.RAW_ENDERRITE.get()));

@@ -26,6 +26,7 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteItems.RAW_ENDERRITE);
                         output.accept(EnderriteBlocks.ENDERRITE_BLOCK);
                         output.accept(EnderriteBlocks.RAW_ENDERRITE_BLOCK);
+                        output.accept(EnderriteBlocks.LIBRARIAN_TOME);
 
                         output.accept(EnderriteBlocks.ENDERRITE_ORE);
 

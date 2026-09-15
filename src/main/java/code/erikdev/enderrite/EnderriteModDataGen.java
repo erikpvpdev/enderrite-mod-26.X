@@ -29,5 +29,6 @@ public class EnderriteModDataGen {
 
         generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
         generator.addProvider(true, new EnderriteAdvancements(packOutput, lookupProvider));
+        generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
     }
 }
