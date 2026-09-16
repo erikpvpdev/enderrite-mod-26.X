@@ -149,8 +149,8 @@ Enderrite/
 | Enderrite materials    | ✅     |
 | New End biomes         | 🟡     |
 | New structures         | 🟡     |
-| World generation       | 🟡     |
-| Custom textures        | 🟡     |
+| World generation       | ✅     |
+| Custom textures        | ✅     |
 | Additional End content | 🔴     |
 
 **Legend:**
