@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "CHORUS",
+  "ingredients": [
+    "enderrite:chorus_planks"
+  ],
+  "result": {
+    "id": "enderrite:chorus_button"
+  }
+}

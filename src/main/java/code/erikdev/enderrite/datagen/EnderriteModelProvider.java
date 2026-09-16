@@ -8,6 +8,7 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.PackOutput;
 
 public class EnderriteModelProvider extends ModelProvider {
@@ -24,6 +25,18 @@ public class EnderriteModelProvider extends ModelProvider {
         blockModels.createTrivialCube(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get());
         blockModels.createTrivialCube(EnderriteBlocks.ENDERRITE_ORE.get());
         blockModels.createTrivialCube(EnderriteBlocks.LIBRARIAN_TOME.get());
+        blockModels.woodProvider(EnderriteBlocks.CHORUS_LOG.get()).logWithHorizontal(EnderriteBlocks.CHORUS_LOG.get()).wood(EnderriteBlocks.CHORUS_WOOD.get());
+        // blockModels.woodProvider(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG.get()).logWithHorizontal(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG.get()).wood(EnderriteBlocks.STRIPPED_DRIFTWOOD_WOOD.get());
+        blockModels.createTintedLeaves(EnderriteBlocks.CHORUS_LEAVES.get(), TexturedModel.LEAVES, -12012265);
+        blockModels.family(EnderriteBlocks.CHORUS_PLANKS.get())
+                .stairs(EnderriteBlocks.CHORUS_STAIRS.get())
+                .slab(EnderriteBlocks.CHORUS_SLAB.get())
+                .pressurePlate(EnderriteBlocks.CHORUS_PRESSURE_PLATE.get())
+                .button(EnderriteBlocks.CHORUS_BUTTON.get())
+                .fence(EnderriteBlocks.CHORUS_FENCE.get())
+                .fenceGate(EnderriteBlocks.CHORUS_FENCE_GATE.get())
+                .door(EnderriteBlocks.CHORUS_DOOR.get())
+                .trapdoor(EnderriteBlocks.CHORUS_TRAPDOOR.get());
 
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

@@ -27,6 +27,18 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteBlocks.ENDERRITE_BLOCK);
                         output.accept(EnderriteBlocks.RAW_ENDERRITE_BLOCK);
                         output.accept(EnderriteBlocks.LIBRARIAN_TOME);
+                        output.accept(EnderriteBlocks.CHORUS_LEAVES);
+                        output.accept(EnderriteBlocks.CHORUS_LOG);
+                        output.accept(EnderriteBlocks.CHORUS_PLANKS);
+                        output.accept(EnderriteBlocks.CHORUS_WOOD);
+                        output.accept(EnderriteBlocks.CHORUS_STAIRS);
+                        output.accept(EnderriteBlocks.CHORUS_SLAB);
+                        output.accept(EnderriteBlocks.CHORUS_PRESSURE_PLATE);
+                        output.accept(EnderriteBlocks.CHORUS_BUTTON);
+                        output.accept(EnderriteBlocks.CHORUS_FENCE);
+                        output.accept(EnderriteBlocks.CHORUS_FENCE_GATE);
+                        output.accept(EnderriteBlocks.CHORUS_DOOR);
+                        output.accept(EnderriteBlocks.CHORUS_TRAPDOOR);
 
                         output.accept(EnderriteBlocks.ENDERRITE_ORE);
 
@@ -43,8 +55,6 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteItems.ENDERRITE_CHESTPLATE);
                         output.accept(EnderriteItems.ENDERRITE_LEGGINGS);
                         output.accept(EnderriteItems.ENDERRITE_BOOTS);
-
-
 
                     }).build());
 

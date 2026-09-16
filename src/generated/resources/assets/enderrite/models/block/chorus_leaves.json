@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "enderrite:block/chorus_leaves"
+  }
+}

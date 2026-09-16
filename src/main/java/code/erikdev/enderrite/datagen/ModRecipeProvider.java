@@ -3,6 +3,7 @@ package code.erikdev.enderrite.datagen;
 import code.erikdev.enderrite.EnderriteMod;
 import code.erikdev.enderrite.block.EnderriteBlocks;
 import code.erikdev.enderrite.item.EnderriteItems;
+import code.erikdev.enderrite.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -168,6 +169,34 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("ENDERRITE")
                 .save(output);
 
+
+        woodFromLogs(EnderriteBlocks.CHORUS_WOOD, EnderriteBlocks.CHORUS_LOG);
+        // woodFromLogs(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG, EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG);
+        planksFromLog(EnderriteBlocks.CHORUS_PLANKS, ModTags.Items.CHORUS_LOGS, 4);
+
+        stairBuilder(EnderriteBlocks.CHORUS_STAIRS.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS))
+                .unlockedBy(getHasName(EnderriteBlocks.CHORUS_PLANKS.get()), has(EnderriteBlocks.CHORUS_PLANKS))
+                .group("CHORUS").save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS, EnderriteBlocks.CHORUS_SLAB.get(), EnderriteBlocks.CHORUS_PLANKS.get());
+
+        buttonBuilder(EnderriteBlocks.CHORUS_BUTTON.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS.get()))
+                .unlockedBy(getHasName(EnderriteBlocks.CHORUS_PLANKS.get()), has(EnderriteBlocks.CHORUS_PLANKS))
+                .group("CHORUS").save(output);
+        pressurePlate(EnderriteBlocks.CHORUS_PRESSURE_PLATE.get(), EnderriteBlocks.CHORUS_PLANKS.get());
+
+        fenceBuilder(EnderriteBlocks.CHORUS_FENCE.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS.get()))
+                .unlockedBy(getHasName(EnderriteBlocks.CHORUS_PLANKS.get()), has(EnderriteBlocks.CHORUS_PLANKS))
+                .group("CHORUS").save(output);
+        fenceGateBuilder(EnderriteBlocks.CHORUS_FENCE_GATE.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS.get()))
+                .unlockedBy(getHasName(EnderriteBlocks.CHORUS_PLANKS.get()), has(EnderriteBlocks.CHORUS_PLANKS))
+                .group("CHORUS").save(output);
+
+        doorBuilder(EnderriteBlocks.CHORUS_DOOR.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS.get()))
+                .unlockedBy(getHasName(EnderriteBlocks.CHORUS_PLANKS.get()), has(EnderriteBlocks.CHORUS_PLANKS))
+                .group("CHORUS").save(output);
+        trapdoorBuilder(EnderriteBlocks.CHORUS_TRAPDOOR.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS.get()))
+                .unlockedBy(getHasName(EnderriteBlocks.CHORUS_PLANKS.get()), has(EnderriteBlocks.CHORUS_PLANKS))
+                .group("CHORUS").save(output);
 
     }
 

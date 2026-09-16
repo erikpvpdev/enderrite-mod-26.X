@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "enderrite:chorus_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "enderrite:chorus_pressure_plate"
+  }
+}

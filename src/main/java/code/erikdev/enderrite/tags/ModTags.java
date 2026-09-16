@@ -28,6 +28,8 @@ public class ModTags {
 
         public static final TagKey<Item> ENDERRITE_REPAIRABLE = createTag("enderrite_repairable");
 
+        public static final TagKey<Item> CHORUS_LOGS = createTag("chorus_logs");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(EnderriteMod.MOD_ID, name));
         }
