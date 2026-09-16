@@ -1,25 +1,186 @@
+# 🟣 Enderrite
 
-Installation information
-=======
+**Enderrite** ist eine Minecraft Java Edition Mod für **NeoForge**, die das End um neue Inhalte erweitert.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Die Mod fügt ein **neues Erz**, mehrere **neue End-Biome** und verschiedene **neue Strukturen** hinzu. Das Ziel ist, das End abwechslungsreicher zu gestalten und ihm mehr Erkundungsmöglichkeiten zu geben.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+> 🚧 **Enderrite befindet sich derzeit in Entwicklung.**
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+---
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## ✨ Features
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+### 💎 Enderrite-Erz
+
+Enderrite fügt ein neues Erz hinzu, das im End gefunden werden kann.
+
+Geplant bzw. enthalten:
+
+* 💎 Enderrite-Erz
+* 🔹 Rohes Enderrite
+* 🪙 Enderrite-Barren
+* 🛠️ Weitere Verwendungsmöglichkeiten für Enderrite
+
+---
+
+### 🌌 Neue End-Biome
+
+Das End bekommt mehrere neue Biome mit eigenen Landschaften und Besonderheiten.
+
+Geplant sind unter anderem:
+
+* 🌑 Neue Landschaften
+* 🌿 Neue End-Pflanzen
+* 🪨 Neue Blöcke
+* ✨ Neue Umgebungen
+* 🌌 Eigene Atmosphären
+
+---
+
+### 🏛️ Neue Strukturen
+
+In den neuen End-Gebieten können verschiedene Strukturen gefunden werden.
+
+Dazu gehören beispielsweise:
+
+* 🏛️ Neue Ruinen
+* 🏰 Neue Gebäude
+* 🗿 Mysteriöse End-Strukturen
+* 💎 Strukturen mit besonderen Ressourcen
+* 🌌 Weitere einzigartige Orte
+
+---
+
+## ⚙️ Anforderungen
+
+| Voraussetzung          | Version     |
+| ---------------------- | ----------- |
+| Minecraft Java Edition | **26.2**    |
+| NeoForge               | **26.2.0.25-beta**  |
+| Java                   | **Java 25** |
+
+> Die benötigten Versionen können sich während der Entwicklung ändern.
+
+---
+
+## 📦 Installation
+
+1. Installiere **Minecraft Java Edition 26.2**.
+2. Installiere die passende **NeoForge-Version**.
+3. Lade die aktuelle Enderrite-`.jar` herunter.
+4. Öffne deinen Minecraft-Ordner.
+5. Öffne den Ordner `mods`.
+6. Verschiebe die Enderrite-`.jar` in den `mods`-Ordner.
+7. Starte Minecraft über dein NeoForge-Profil.
+
+---
+
+## 🛠️ Entwicklung
+
+Enderrite wird mit **Java**, **Gradle** und **NeoForge** entwickelt.
+
+### Projekt bauen
+
+```bash
+gradlew build
+```
+
+Die fertige Mod befindet sich anschließend normalerweise unter:
+
+```text
+build/libs/
+```
+
+### Abhängigkeiten aktualisieren
+
+Falls Probleme mit fehlenden Bibliotheken auftreten:
+
+```bash
+gradlew --refresh-dependencies
+```
+
+### Projekt bereinigen
+
+```bash
+gradlew clean
+```
+
+---
+
+## 📁 Projektstruktur
+
+```text
+Enderrite/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── code/erikdev/enderrite/
+│   │   │       ├── block/
+│   │   │       ├── item/
+│   │   │       ├── tags/
+│   │   │       ├── datagen/
+│   │   │       ├── creativemodetab/
+│   │   │       ├── worldgen/
+│   │   │       └── EnderriteMod.java
+│   │   │
+│   │   └── resources/
+│   │       ├── assets/
+│   │       ├── data/
+│   │       └── META-INF/
+│   │
+│   └── generated/
+│       └── resources/
+│
+├── build.gradle
+├── gradle.properties
+├── gradlew
+└── README.md
+```
+
+---
+
+## 🗺️ Entwicklungsstatus
+
+| Feature               | Status |
+| --------------------- | ------ |
+| Mod-Grundstruktur     | ✅      |
+| Enderrite-Erz         | ✅      |
+| Enderrite-Materialien | ✅      |
+| Neue End-Biome        | 🟡      |
+| Neue Strukturen       | 🟡      |
+| Weltgeneration        | ✅      |
+| Eigene Texturen       | ✅      |
+| Weitere End-Inhalte   | 🔴      |
+
+**Legende:**
+
+* ✅ Fertig
+* 🟡 In Entwicklung
+* 🔴 Geplant
+
+---
+
+## 🎯 Ziel der Mod
+
+Das End soll sich nicht mehr nur wie ein einzelner großer Bereich anfühlen.
+
+Mit **Enderrite** soll das End mehr Abwechslung, Erkundung und interessante Orte bekommen.
+
+Neue Biome, Strukturen und Ressourcen sollen das Erkunden des Endes spannender machen, ohne das ursprüngliche Minecraft-Gefühl komplett zu verändern.
+
+---
+
+## 👨‍💻 Entwickler
+
+**Enderrite**
+Created by **ErikDev**
+
+Minecraft-Mod für **Minecraft Java Edition + NeoForge**.
+
+---
+
+## ⚠️ Hinweis
+
+Enderrite ist ein **inoffizielles Fan-Projekt** und steht nicht in Verbindung mit Mojang Studios oder Microsoft.
+
+Minecraft ist eine Marke von Mojang Studios/Microsoft.
