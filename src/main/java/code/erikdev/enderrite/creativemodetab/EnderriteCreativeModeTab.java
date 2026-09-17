@@ -1,6 +1,7 @@
 package code.erikdev.enderrite.creativemodetab;
 
 import code.erikdev.enderrite.EnderriteMod;
+import code.erikdev.enderrite.EnderriteModDataGen;
 import code.erikdev.enderrite.block.EnderriteBlocks;
 import code.erikdev.enderrite.item.EnderriteItems;
 import net.minecraft.core.registries.Registries;
@@ -39,6 +40,8 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteBlocks.CHORUS_FENCE_GATE);
                         output.accept(EnderriteBlocks.CHORUS_DOOR);
                         output.accept(EnderriteBlocks.CHORUS_TRAPDOOR);
+                        output.accept(EnderriteBlocks.CRACKED_END_STONE_BRICKS);
+                        output.accept(EnderriteBlocks.END_STONE_PILLARS);
 
                         output.accept(EnderriteBlocks.ENDERRITE_ORE);
 

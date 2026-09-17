@@ -25,6 +25,12 @@ public class EnderriteModelProvider extends ModelProvider {
         blockModels.createTrivialCube(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get());
         blockModels.createTrivialCube(EnderriteBlocks.ENDERRITE_ORE.get());
         blockModels.createTrivialCube(EnderriteBlocks.LIBRARIAN_TOME.get());
+        blockModels.createTrivialCube(EnderriteBlocks.CRACKED_END_STONE_BRICKS.get());
+        blockModels.createRotatedPillarWithHorizontalVariant(
+                EnderriteBlocks.END_STONE_PILLARS.get(),
+                TexturedModel.COLUMN_ALT,
+                TexturedModel.COLUMN_HORIZONTAL_ALT
+        );
         blockModels.woodProvider(EnderriteBlocks.CHORUS_LOG.get()).logWithHorizontal(EnderriteBlocks.CHORUS_LOG.get()).wood(EnderriteBlocks.CHORUS_WOOD.get());
         // blockModels.woodProvider(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG.get()).logWithHorizontal(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG.get()).wood(EnderriteBlocks.STRIPPED_DRIFTWOOD_WOOD.get());
         blockModels.createTintedLeaves(EnderriteBlocks.CHORUS_LEAVES.get(), TexturedModel.LEAVES, -12012265);

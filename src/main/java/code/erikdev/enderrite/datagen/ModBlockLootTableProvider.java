@@ -42,6 +42,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EnderriteBlocks.CHORUS_FENCE_GATE.get());
         dropSelf(EnderriteBlocks.CHORUS_TRAPDOOR.get());
         dropSelf(EnderriteBlocks.CHORUS_DOOR.get());
+        dropSelf(EnderriteBlocks.END_STONE_PILLARS.get());
+        dropSelf(EnderriteBlocks.CRACKED_END_STONE_BRICKS.get());
 
         add(EnderriteBlocks.ENDERRITE_ORE.get(),
                 createOreDrop(EnderriteBlocks.ENDERRITE_ORE.get(), EnderriteItems.RAW_ENDERRITE.get()));

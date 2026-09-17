@@ -44,6 +44,14 @@ public class EnderriteBlocks {
             properties -> new Block(properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.WOOD)));
 
+    public static final DeferredBlock<Block> CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> END_STONE_PILLARS = registerBlock("end_stone_pillar",
+            properties -> new RotatedPillarBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> CHORUS_LOG = registerBlock("chorus_log",
             properties -> new ModFlammableRotatedPillarBlock(properties.instrument(NoteBlockInstrument.BASS)
                     .strength(2f).sound(SoundType.CHERRY_WOOD).ignitedByLava()));

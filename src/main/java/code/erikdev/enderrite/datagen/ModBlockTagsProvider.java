@@ -21,7 +21,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_BLOCK.get()))
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get()))
-                .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_ORE.get()));
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_ORE.get()))
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.CRACKED_END_STONE_BRICKS.get()))
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.END_STONE_PILLARS.get()));
+
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_ORE.get()))

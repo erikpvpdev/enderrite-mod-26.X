@@ -2,6 +2,8 @@
   "values": [
     "enderrite:enderrite_block",
     "enderrite:raw_enderrite_block",
-    "enderrite:enderrite_ore"
+    "enderrite:enderrite_ore",
+    "enderrite:cracked_end_stone_bricks",
+    "enderrite:end_stone_pillar"
   ]
 }
