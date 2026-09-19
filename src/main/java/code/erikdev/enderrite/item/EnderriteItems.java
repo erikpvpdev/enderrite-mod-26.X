@@ -3,14 +3,14 @@ package code.erikdev.enderrite.item;
 import code.erikdev.enderrite.EnderriteMod;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import static code.erikdev.enderrite.block.EnderriteBlocks.SPORE_TORCH;
+import static code.erikdev.enderrite.block.EnderriteBlocks.SPORE_WALL_TORCH;
 
 public class EnderriteItems {
 
@@ -42,6 +42,7 @@ public class EnderriteItems {
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
     public static final DeferredItem<Item> ENDERRITE_BOOTS = ITEMS.registerItem("enderrite_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.BOOTS)));
+
 
 
     public static ResourceKey<Item> getRK(Item item) {

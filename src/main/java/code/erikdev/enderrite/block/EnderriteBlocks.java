@@ -2,6 +2,9 @@ package code.erikdev.enderrite.block;
 
 import code.erikdev.enderrite.EnderriteMod;
 import code.erikdev.enderrite.block.custom.ModFlammableRotatedPillarBlock;
+import code.erikdev.enderrite.block.custom.SporeLanternBlock;
+import code.erikdev.enderrite.block.custom.SporeTorchBlock;
+import code.erikdev.enderrite.block.custom.SporeWallTorchBlock;
 import code.erikdev.enderrite.item.EnderriteItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -133,6 +136,36 @@ public class EnderriteBlocks {
     public static final DeferredBlock<Block> CHORUS_TRAPDOOR = registerBlock("chorus_trapdoor",
             properties -> new TrapDoorBlock(BlockSetType.CHERRY, properties.strength(2F)
                     .requiresCorrectToolForDrops().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> SPORE_TORCH =
+            registerBlock("spore_torch",
+                    properties -> new SporeTorchBlock(
+                            properties
+                                    .noCollision()
+                                    .instabreak()
+                                    .lightLevel(state -> 14)
+                                    .sound(SoundType.WOOD)
+                    ));
+    public static final DeferredBlock<Block> SPORE_WALL_TORCH = BLOCKS.registerBlock(
+            "spore_wall_torch",
+            properties -> new SporeWallTorchBlock(
+                    properties
+                            .noCollision()
+                            .instabreak()
+                            .lightLevel(state -> 14)
+                            .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<Block> SPORE_LANTERN =
+            registerBlock("spore_lantern",
+                    properties -> new SporeLanternBlock(
+                            properties
+                                    .strength(3.5F)
+                                    .lightLevel(state -> 15)
+                                    .sound(SoundType.LANTERN)
+                                    .noOcclusion()
+                    ));
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();

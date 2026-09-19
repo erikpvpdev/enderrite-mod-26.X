@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "enderrite:block/spore_lantern"
+    },
+    "hanging=true": {
+      "model": "enderrite:block/spore_lantern_hanging"
+    }
+  }
+}

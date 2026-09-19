@@ -43,6 +43,14 @@ public class EnderriteModelProvider extends ModelProvider {
                 .fenceGate(EnderriteBlocks.CHORUS_FENCE_GATE.get())
                 .door(EnderriteBlocks.CHORUS_DOOR.get())
                 .trapdoor(EnderriteBlocks.CHORUS_TRAPDOOR.get());
+        blockModels.createNormalTorch(
+                EnderriteBlocks.SPORE_TORCH.get(),
+                EnderriteBlocks.SPORE_WALL_TORCH.get()
+        );
+
+        blockModels.createLantern(
+                EnderriteBlocks.SPORE_LANTERN.get()
+        );
 
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

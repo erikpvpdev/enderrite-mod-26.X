@@ -3,6 +3,7 @@ package code.erikdev.enderrite;
 import code.erikdev.enderrite.block.EnderriteBlocks;
 import code.erikdev.enderrite.creativemodetab.EnderriteCreativeModeTab;
 import code.erikdev.enderrite.item.EnderriteItems;
+import code.erikdev.enderrite.particle.EnderriteParticles;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,6 +34,7 @@ public class EnderriteMod {
         EnderriteBlocks.register(modEventBus);
 
         EnderriteCreativeModeTab.register(modEventBus);
+        EnderriteParticles.PARTICLE_TYPES.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

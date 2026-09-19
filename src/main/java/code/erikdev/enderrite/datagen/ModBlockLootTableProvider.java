@@ -33,6 +33,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EnderriteBlocks.CHORUS_PLANKS.get());
         dropSelf(EnderriteBlocks.CHORUS_LOG.get());
         dropSelf(EnderriteBlocks.CHORUS_WOOD.get());
+        dropSelf(EnderriteBlocks.SPORE_LANTERN.get());
+        dropSelf(EnderriteBlocks.SPORE_TORCH.get());
+        dropOther(EnderriteBlocks.SPORE_WALL_TORCH.get(), EnderriteBlocks.SPORE_TORCH.get());
         dropSelf(EnderriteBlocks.STRIPPED_CHORUS_LOG.get());
         dropSelf(EnderriteBlocks.STRIPPED_CHORUS_WOOD.get());
         dropSelf(EnderriteBlocks.CHORUS_STAIRS.get());
