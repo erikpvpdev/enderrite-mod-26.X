@@ -48,10 +48,16 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(EnderriteItems.getRK(EnderriteBlocks.CHORUS_LOG.asItem()))
-                .add(EnderriteItems.getRK(EnderriteBlocks.CHORUS_WOOD.asItem()));
+                .add(EnderriteItems.getRK(EnderriteBlocks.CHORUS_WOOD.asItem()))
+                .add(EnderriteItems.getRK(EnderriteBlocks.STRIPPED_CHORUS_LOG.asItem()))
+                .add(EnderriteItems.getRK(EnderriteBlocks.STRIPPED_CHORUS_WOOD.asItem()));
 
         tag(ModTags.Items.CHORUS_LOGS)
                 .add(EnderriteItems.getRK(EnderriteBlocks.CHORUS_LOG.asItem()))
-                .add(EnderriteItems.getRK(EnderriteBlocks.CHORUS_WOOD.asItem()));
+                .add(EnderriteItems.getRK(EnderriteBlocks.CHORUS_WOOD.asItem()))
+                .add(EnderriteItems.getRK(EnderriteBlocks.STRIPPED_CHORUS_LOG.asItem()))
+                .add(EnderriteItems.getRK(EnderriteBlocks.STRIPPED_CHORUS_WOOD.asItem()));
+
+
     }
 }

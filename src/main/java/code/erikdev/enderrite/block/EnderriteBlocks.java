@@ -59,6 +59,13 @@ public class EnderriteBlocks {
             properties -> new ModFlammableRotatedPillarBlock(properties.instrument(NoteBlockInstrument.BASS)
                     .strength(2f).sound(SoundType.CHERRY_WOOD).ignitedByLava()));
 
+    public static final DeferredBlock<Block> STRIPPED_CHORUS_LOG = registerBlock("stripped_chorus_log",
+            properties -> new ModFlammableRotatedPillarBlock(properties.instrument(NoteBlockInstrument.BASS)
+                    .strength(2f).sound(SoundType.CHERRY_WOOD).ignitedByLava()));
+    public static final DeferredBlock<Block> STRIPPED_CHORUS_WOOD = registerBlock("stripped_chorus_wood",
+            properties -> new ModFlammableRotatedPillarBlock(properties.instrument(NoteBlockInstrument.BASS)
+                    .strength(2f).sound(SoundType.CHERRY_WOOD).ignitedByLava()));
+
 
     public static final DeferredBlock<Block> CHORUS_PLANKS = registerBlock("chorus_planks",
             properties -> new Block(properties.mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS)

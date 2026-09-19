@@ -36,7 +36,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(EnderriteBlocks.CHORUS_PLANKS.getKey());
         tag(BlockItemTags.LOGS_THAT_BURN.block())
                 .add(EnderriteBlocks.CHORUS_LOG.getKey())
-                .add(EnderriteBlocks.CHORUS_WOOD.getKey());
+                .add(EnderriteBlocks.CHORUS_WOOD.getKey())
+                .add(EnderriteBlocks.STRIPPED_CHORUS_LOG.getKey())
+                .add(EnderriteBlocks.STRIPPED_CHORUS_WOOD.getKey());
         tag(BlockTags.STAIRS)
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.CHORUS_STAIRS.get()));
         tag(BlockTags.SLABS)

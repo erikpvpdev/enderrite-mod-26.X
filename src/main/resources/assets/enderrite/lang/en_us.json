@@ -20,6 +20,8 @@
   "block.enderrite.librarian_tome": "Librarian Tome",
   "block.enderrite.chorus_log": "Chorus Log",
   "block.enderrite.chorus_wood": "Chorus Wood",
+  "block.enderrite.stripped_chorus_log": "Stripped Chorus Log",
+  "block.enderrite.stripped_chorus_wood": "Stripped Chorus Wood",
   "block.enderrite.chorus_planks": "Chorus Planks",
   "block.enderrite.chorus_stairs": "Chorus Stairs",
   "block.enderrite.chorus_slab": "Chorus Slab",
@@ -29,6 +31,8 @@
   "block.enderrite.chorus_trapdoor": "Chorus Trapdoor",
   "block.enderrite.chorus_button": "Chorus Button",
   "block.enderrite.chorus_pressure_plate": "Chorus Pressure Plate",
+  "block.enderrite.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+  "block.enderrite.end_stone_pillar": "End Stone Pillars",
 
   "enderrite.configuration.title": "Enderrite Mod Configs",
   "enderrite.configuration.section.enderrite.common.toml": "Enderrite Mod Configs",

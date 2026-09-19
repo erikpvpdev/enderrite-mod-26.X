@@ -171,7 +171,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
 
         woodFromLogs(EnderriteBlocks.CHORUS_WOOD, EnderriteBlocks.CHORUS_LOG);
-        // woodFromLogs(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG, EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG);
+        woodFromLogs(EnderriteBlocks.STRIPPED_CHORUS_LOG, EnderriteBlocks.STRIPPED_CHORUS_WOOD);
         planksFromLog(EnderriteBlocks.CHORUS_PLANKS, ModTags.Items.CHORUS_LOGS, 4);
 
         stairBuilder(EnderriteBlocks.CHORUS_STAIRS.get(), Ingredient.of(EnderriteBlocks.CHORUS_PLANKS))

@@ -1,0 +1,10 @@
+{
+  "values": {
+    "enderrite:chorus_log": {
+      "stripped_block": "enderrite:stripped_chorus_log"
+    },
+    "enderrite:chorus_wood": {
+      "stripped_block": "enderrite:stripped_chorus_wood"
+    }
+  }
+}

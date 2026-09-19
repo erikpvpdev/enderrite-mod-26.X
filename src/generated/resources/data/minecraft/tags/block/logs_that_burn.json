@@ -1,6 +1,8 @@
 {
   "values": [
     "enderrite:chorus_log",
-    "enderrite:chorus_wood"
+    "enderrite:chorus_wood",
+    "enderrite:stripped_chorus_log",
+    "enderrite:stripped_chorus_wood"
   ]
 }

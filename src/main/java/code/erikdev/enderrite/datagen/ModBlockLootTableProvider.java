@@ -33,6 +33,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EnderriteBlocks.CHORUS_PLANKS.get());
         dropSelf(EnderriteBlocks.CHORUS_LOG.get());
         dropSelf(EnderriteBlocks.CHORUS_WOOD.get());
+        dropSelf(EnderriteBlocks.STRIPPED_CHORUS_LOG.get());
+        dropSelf(EnderriteBlocks.STRIPPED_CHORUS_WOOD.get());
         dropSelf(EnderriteBlocks.CHORUS_STAIRS.get());
         add(EnderriteBlocks.CHORUS_SLAB.get(), this::createSlabItemTable);
 

@@ -32,7 +32,7 @@ public class EnderriteModelProvider extends ModelProvider {
                 TexturedModel.COLUMN_HORIZONTAL_ALT
         );
         blockModels.woodProvider(EnderriteBlocks.CHORUS_LOG.get()).logWithHorizontal(EnderriteBlocks.CHORUS_LOG.get()).wood(EnderriteBlocks.CHORUS_WOOD.get());
-        // blockModels.woodProvider(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG.get()).logWithHorizontal(EnderriteBlocks.STRIPPED_DRIFTWOOD_LOG.get()).wood(EnderriteBlocks.STRIPPED_DRIFTWOOD_WOOD.get());
+        blockModels.woodProvider(EnderriteBlocks.STRIPPED_CHORUS_LOG.get()).logWithHorizontal(EnderriteBlocks.STRIPPED_CHORUS_LOG.get()).wood(EnderriteBlocks.STRIPPED_CHORUS_WOOD.get());
         blockModels.createTintedLeaves(EnderriteBlocks.CHORUS_LEAVES.get(), TexturedModel.LEAVES, -12012265);
         blockModels.family(EnderriteBlocks.CHORUS_PLANKS.get())
                 .stairs(EnderriteBlocks.CHORUS_STAIRS.get())

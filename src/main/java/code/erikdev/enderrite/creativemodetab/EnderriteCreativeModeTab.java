@@ -30,8 +30,10 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteBlocks.LIBRARIAN_TOME);
                         output.accept(EnderriteBlocks.CHORUS_LEAVES);
                         output.accept(EnderriteBlocks.CHORUS_LOG);
-                        output.accept(EnderriteBlocks.CHORUS_PLANKS);
+                        output.accept(EnderriteBlocks.STRIPPED_CHORUS_LOG);
                         output.accept(EnderriteBlocks.CHORUS_WOOD);
+                        output.accept(EnderriteBlocks.STRIPPED_CHORUS_WOOD);
+                        output.accept(EnderriteBlocks.CHORUS_PLANKS);
                         output.accept(EnderriteBlocks.CHORUS_STAIRS);
                         output.accept(EnderriteBlocks.CHORUS_SLAB);
                         output.accept(EnderriteBlocks.CHORUS_PRESSURE_PLATE);
