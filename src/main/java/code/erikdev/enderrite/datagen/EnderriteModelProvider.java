@@ -8,8 +8,12 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.Identifier;
 
 public class EnderriteModelProvider extends ModelProvider {
     public EnderriteModelProvider(PackOutput output) {
@@ -43,13 +47,56 @@ public class EnderriteModelProvider extends ModelProvider {
                 .fenceGate(EnderriteBlocks.CHORUS_FENCE_GATE.get())
                 .door(EnderriteBlocks.CHORUS_DOOR.get())
                 .trapdoor(EnderriteBlocks.CHORUS_TRAPDOOR.get());
-        blockModels.createNormalTorch(
-                EnderriteBlocks.SPORE_TORCH.get(),
-                EnderriteBlocks.SPORE_WALL_TORCH.get()
-        );
 
         blockModels.createLantern(
                 EnderriteBlocks.SPORE_LANTERN.get()
+        );
+
+        blockModels.createTrivialBlock(
+                EnderriteBlocks.END_GRASS.get(),
+                TexturedModel.createDefault(
+                        block -> new TextureMapping()
+                                .put(
+                                        TextureSlot.TOP,
+                                        new Material(
+                                                Identifier.fromNamespaceAndPath(
+                                                        EnderriteMod.MOD_ID,
+                                                        "block/end_grass_top"
+                                                )
+                                        )
+                                )
+                                .put(
+                                        TextureSlot.SIDE,
+                                        new Material(
+                                                Identifier.fromNamespaceAndPath(
+                                                        EnderriteMod.MOD_ID,
+                                                        "block/end_grass_side"
+                                                )
+                                        )
+                                )
+                                .put(
+                                        TextureSlot.BOTTOM,
+                                        new Material(
+                                                Identifier.fromNamespaceAndPath(
+                                                        EnderriteMod.MOD_ID,
+                                                        "block/end_grass_bottom"
+                                                )
+                                        )
+                                ),
+                        ModelTemplates.CUBE_BOTTOM_TOP
+                )
+        );
+
+        blockModels.createCrossBlock(
+                EnderriteBlocks.GRASS.get(),
+                BlockModelGenerators.PlantType.NOT_TINTED
+        );
+        blockModels.createCrossBlock(
+                EnderriteBlocks.END_SPORE.get(),
+                BlockModelGenerators.PlantType.NOT_TINTED
+        );blockModels.createCrossBlock(
+                EnderriteBlocks.CHORUS_ROOTS.get(),
+                BlockModelGenerators.PlantType.NOT_TINTED
         );
 
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

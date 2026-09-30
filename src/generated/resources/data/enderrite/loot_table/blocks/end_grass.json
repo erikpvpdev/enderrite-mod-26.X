@@ -10,11 +10,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "enderrite:spore_torch"
+          "name": "enderrite:end_grass"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "enderrite:blocks/spore_wall_torch"
+  "random_sequence": "enderrite:blocks/end_grass"
 }

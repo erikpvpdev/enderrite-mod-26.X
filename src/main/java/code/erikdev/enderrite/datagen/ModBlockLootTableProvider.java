@@ -27,6 +27,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropSelf(EnderriteBlocks.END_GRASS.get());
         dropSelf(EnderriteBlocks.ENDERRITE_BLOCK.get());
         dropSelf(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get());
         dropSelf(EnderriteBlocks.LIBRARIAN_TOME.get());
@@ -34,8 +35,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EnderriteBlocks.CHORUS_LOG.get());
         dropSelf(EnderriteBlocks.CHORUS_WOOD.get());
         dropSelf(EnderriteBlocks.SPORE_LANTERN.get());
-        dropSelf(EnderriteBlocks.SPORE_TORCH.get());
-        dropOther(EnderriteBlocks.SPORE_WALL_TORCH.get(), EnderriteBlocks.SPORE_TORCH.get());
         dropSelf(EnderriteBlocks.STRIPPED_CHORUS_LOG.get());
         dropSelf(EnderriteBlocks.STRIPPED_CHORUS_WOOD.get());
         dropSelf(EnderriteBlocks.CHORUS_STAIRS.get());
@@ -49,6 +48,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EnderriteBlocks.CHORUS_DOOR.get());
         dropSelf(EnderriteBlocks.END_STONE_PILLARS.get());
         dropSelf(EnderriteBlocks.CRACKED_END_STONE_BRICKS.get());
+        add(EnderriteBlocks.CHORUS_ROOTS.get(),
+                createShearsOnlyDrop(EnderriteBlocks.CHORUS_ROOTS.get()));
+        add(EnderriteBlocks.END_SPORE.get(),
+                createShearsOnlyDrop(EnderriteBlocks.END_SPORE.get()));
+        add(EnderriteBlocks.GRASS.get(),
+                createShearsOnlyDrop(EnderriteBlocks.GRASS.get()));
 
         add(EnderriteBlocks.ENDERRITE_ORE.get(),
                 createOreDrop(EnderriteBlocks.ENDERRITE_ORE.get(), EnderriteItems.RAW_ENDERRITE.get()));

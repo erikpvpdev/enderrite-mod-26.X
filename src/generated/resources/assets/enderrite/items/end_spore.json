@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "enderrite:block/spore_wall_torch"
+    "model": "enderrite:block/end_spore"
   }
 }

@@ -1,10 +1,7 @@
 package code.erikdev.enderrite.block;
 
 import code.erikdev.enderrite.EnderriteMod;
-import code.erikdev.enderrite.block.custom.ModFlammableRotatedPillarBlock;
-import code.erikdev.enderrite.block.custom.SporeLanternBlock;
-import code.erikdev.enderrite.block.custom.SporeTorchBlock;
-import code.erikdev.enderrite.block.custom.SporeWallTorchBlock;
+import code.erikdev.enderrite.block.custom.*;
 import code.erikdev.enderrite.item.EnderriteItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -24,6 +21,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Function;
@@ -137,48 +135,58 @@ public class EnderriteBlocks {
             properties -> new TrapDoorBlock(BlockSetType.CHERRY, properties.strength(2F)
                     .requiresCorrectToolForDrops().sound(SoundType.WOOD).noOcclusion()));
 
-    public static final DeferredBlock<Block> SPORE_TORCH =
-            registerBlock("spore_torch",
-                    properties -> new SporeTorchBlock(
-                            properties
-                                    .noCollision()
-                                    .instabreak()
-                                    .lightLevel(state -> 14)
-                                    .sound(SoundType.WOOD)
-                    ));
-    public static final DeferredBlock<Block> SPORE_WALL_TORCH = BLOCKS.registerBlock(
-            "spore_wall_torch",
-            properties -> new SporeWallTorchBlock(
-                    properties
-                            .noCollision()
-                            .instabreak()
-                            .lightLevel(state -> 14)
-                            .sound(SoundType.WOOD)
+    public static final DeferredBlock<Block> END_GRASS = registerBlock(
+            "end_grass",
+            properties -> new EnderriteEndGrassBlock(
+                    properties.strength(0.6F).sound(SoundType.GRASS)
             )
     );
 
     public static final DeferredBlock<Block> SPORE_LANTERN =
-            registerBlock("spore_lantern",
+            registerBlock(
+                    "spore_lantern",
                     properties -> new SporeLanternBlock(
                             properties
                                     .strength(3.5F)
                                     .lightLevel(state -> 15)
                                     .sound(SoundType.LANTERN)
                                     .noOcclusion()
-                    ));
+                    )
+            );
+
+    public static final DeferredBlock<Block> GRASS =
+            registerBlock("grass", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS)));
+
+    public static final DeferredBlock<Block> END_SPORE =
+            registerBlock("end_spore", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS)));
+
+    public static final DeferredBlock<Block> CHORUS_ROOTS =
+            registerBlock("chorus_roots", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS)));
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
+    private static <T extends Block> DeferredBlock<T> registerBlock(
+            String name,
+            Function<BlockBehaviour.Properties, T> function
+    ) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        EnderriteItems.ITEMS.registerItem(name, properties -> new BlockItem(block.get(), properties.useBlockDescriptionPrefix()));
+    private static <T extends Block> void registerBlockItem(
+            String name,
+            DeferredBlock<T> block
+    ) {
+        EnderriteItems.ITEMS.registerItem(
+                name,
+                properties -> new BlockItem(
+                        block.get(),
+                        properties.useBlockDescriptionPrefix()
+                )
+        );
     }
 
     public static void register(IEventBus eventBus) {

@@ -9,9 +9,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import static code.erikdev.enderrite.block.EnderriteBlocks.SPORE_TORCH;
-import static code.erikdev.enderrite.block.EnderriteBlocks.SPORE_WALL_TORCH;
-
 public class EnderriteItems {
 
 
@@ -42,8 +39,6 @@ public class EnderriteItems {
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
     public static final DeferredItem<Item> ENDERRITE_BOOTS = ITEMS.registerItem("enderrite_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ENDERRITE_ARMOR_MATERIAL, ArmorType.BOOTS)));
-
-
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();

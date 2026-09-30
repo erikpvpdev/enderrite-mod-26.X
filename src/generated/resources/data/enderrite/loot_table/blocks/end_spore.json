@@ -4,17 +4,20 @@
     {
       "conditions": [
         {
-          "condition": "minecraft:survives_explosion"
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:shears"
+          }
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "enderrite:spore_torch"
+          "name": "enderrite:end_spore"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "enderrite:blocks/spore_torch"
+  "random_sequence": "enderrite:blocks/end_spore"
 }

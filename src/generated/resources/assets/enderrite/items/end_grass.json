@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "enderrite:item/spore_torch"
+    "model": "enderrite:block/end_grass"
   }
 }

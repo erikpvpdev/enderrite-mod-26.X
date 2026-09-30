@@ -23,7 +23,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.RAW_ENDERRITE_BLOCK.get()))
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.ENDERRITE_ORE.get()))
                 .add(EnderriteBlocks.getRK(EnderriteBlocks.CRACKED_END_STONE_BRICKS.get()))
-                .add(EnderriteBlocks.getRK(EnderriteBlocks.END_STONE_PILLARS.get()));
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.END_STONE_PILLARS.get()))
+                .add(EnderriteBlocks.getRK(EnderriteBlocks.END_GRASS.get()));
 
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)

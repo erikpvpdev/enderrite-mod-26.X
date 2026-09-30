@@ -44,6 +44,10 @@ public class EnderriteCreativeModeTab {
                         output.accept(EnderriteBlocks.CHORUS_TRAPDOOR);
                         output.accept(EnderriteBlocks.CRACKED_END_STONE_BRICKS);
                         output.accept(EnderriteBlocks.END_STONE_PILLARS);
+                        output.accept(EnderriteBlocks.END_GRASS);
+                        output.accept(EnderriteBlocks.GRASS);
+                        output.accept(EnderriteBlocks.CHORUS_ROOTS);
+                        output.accept(EnderriteBlocks.END_SPORE);
 
                         output.accept(EnderriteBlocks.ENDERRITE_ORE);
 
