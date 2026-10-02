@@ -2,6 +2,7 @@ package code.erikdev.enderrite.block;
 
 import code.erikdev.enderrite.EnderriteMod;
 import code.erikdev.enderrite.block.custom.*;
+import code.erikdev.enderrite.block.custom.ShortDryGrassBlock;
 import code.erikdev.enderrite.item.EnderriteItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -155,13 +156,13 @@ public class EnderriteBlocks {
             );
 
     public static final DeferredBlock<Block> GRASS =
-            registerBlock("grass", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS)));
+            registerBlock("grass", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS).noCollision()));
 
     public static final DeferredBlock<Block> END_SPORE =
-            registerBlock("end_spore", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS)));
+            registerBlock("end_spore", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS).noCollision()));
 
     public static final DeferredBlock<Block> CHORUS_ROOTS =
-            registerBlock("chorus_roots", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS)));
+            registerBlock("chorus_roots", properties -> new ShortDryGrassBlock(properties.sound(SoundType.GRASS).noCollision()));
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();

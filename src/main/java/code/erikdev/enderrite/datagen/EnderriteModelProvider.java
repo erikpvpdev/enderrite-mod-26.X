@@ -91,13 +91,26 @@ public class EnderriteModelProvider extends ModelProvider {
                 EnderriteBlocks.GRASS.get(),
                 BlockModelGenerators.PlantType.NOT_TINTED
         );
+        itemModels.generateFlatItem(
+                EnderriteBlocks.GRASS.asItem(),
+                ModelTemplates.FLAT_ITEM
+        );
         blockModels.createCrossBlock(
                 EnderriteBlocks.END_SPORE.get(),
                 BlockModelGenerators.PlantType.NOT_TINTED
+        );
+        itemModels.generateFlatItem(
+                EnderriteBlocks.END_SPORE.asItem(),
+                ModelTemplates.FLAT_ITEM
         );blockModels.createCrossBlock(
                 EnderriteBlocks.CHORUS_ROOTS.get(),
                 BlockModelGenerators.PlantType.NOT_TINTED
         );
+        itemModels.generateFlatItem(
+                EnderriteBlocks.CHORUS_ROOTS.asItem(),
+                ModelTemplates.FLAT_ITEM
+        );
+
 
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(EnderriteItems.ENDERRITE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

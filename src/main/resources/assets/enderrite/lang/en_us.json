@@ -33,6 +33,10 @@
   "block.enderrite.chorus_pressure_plate": "Chorus Pressure Plate",
   "block.enderrite.cracked_end_stone_bricks": "Cracked End Stone Bricks",
   "block.enderrite.end_stone_pillar": "End Stone Pillars",
+  "block.enderrite.end_grass": "End Grass",
+  "block.enderrite.grass": "Wild Grass",
+  "block.enderrite.end_spore": "End Spore",
+  "block.enderrite.chorus_roots": "Chorus Roots",
 
   "enderrite.configuration.title": "Enderrite Mod Configs",
   "enderrite.configuration.section.enderrite.common.toml": "Enderrite Mod Configs",

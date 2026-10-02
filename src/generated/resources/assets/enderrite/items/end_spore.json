@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "enderrite:block/end_spore"
+    "model": "enderrite:item/end_spore"
   }
 }

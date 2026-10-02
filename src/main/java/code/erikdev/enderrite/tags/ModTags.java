@@ -30,6 +30,16 @@ public class ModTags {
 
         public static final TagKey<Item> CHORUS_LOGS = createTag("chorus_logs");
 
+        public static final TagKey<Block> SUPPORT_END_GRASS =
+                TagKey.create(
+                        Registries.BLOCK,
+                        Identifier.fromNamespaceAndPath(
+                                EnderriteMod.MOD_ID,
+                                "support_end_grass"
+                        )
+                );
+
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(EnderriteMod.MOD_ID, name));
         }

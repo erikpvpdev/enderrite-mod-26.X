@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "enderrite:block/grass"
+    "model": "enderrite:item/grass"
   }
 }

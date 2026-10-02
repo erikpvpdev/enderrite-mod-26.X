@@ -18,7 +18,7 @@ public class EnderriteItems {
     public static final DeferredItem<Item> RAW_ENDERRITE = ITEMS.registerSimpleItem("raw_enderrite");
 
     public static final DeferredItem<Item> ENDERRITE_SWORD = ITEMS.registerItem("enderrite_sword",
-            properties -> new Item(properties.sword(ModToolTiers.ENDERRITE, 3, -2.4f)));
+            properties -> new Item(properties.sword(ModToolTiers.ENDERRITE, 5, -2.4f)));
     public static final DeferredItem<Item> ENDERRITE_PICKAXE = ITEMS.registerItem("enderrite_pickaxe",
             properties -> new Item(properties.pickaxe(ModToolTiers.ENDERRITE, 1, -2.8f)));
     public static final DeferredItem<Item> ENDERRITE_SHOVEL = ITEMS.registerItem("enderrite_shovel",
